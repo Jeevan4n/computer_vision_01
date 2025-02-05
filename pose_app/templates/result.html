@@ -1,0 +1,28 @@
+<!-- filepath: /c:/Users/JEEVAN/OneDrive/Desktop/cnnn/yolo_pose_project/pose_app/templates/result.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Processing Result</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/styles.css' %}"
+    />
+  </head>
+  <body>
+    <div class="result-container">
+      <h1>Processing Complete</h1>
+      <div class="result-details">
+        <p><strong>File ID:</strong> {{ file.id }}</p>
+        <p><strong>Status:</strong> Successfully processed</p>
+        <p><strong>Output File:</strong> {{ file.processed_file }}</p>
+      </div>
+      <a href="{% url 'download_video' file.id %}" class="download-button"
+        >Download Video</a
+      >
+    </div>
+  </body>
+</html>
