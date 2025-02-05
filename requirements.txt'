@@ -1,0 +1,13 @@
+python -m venv myvennv  -- creation of an virtual environment
+myvennv\Scripts\activate   -- activate the environment
+
+
+ -- these are the files that i need to install before get into an project 
+numpy
+opencv-python
+torch
+torchvision
+matplotlib
+pandas
+scikit-learn
+pillow
