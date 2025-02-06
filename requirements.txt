@@ -6,5 +6,6 @@ matplotlib
 pandas
 scikit-learn
 pillow
-Flask
 gunicorn
+django
+ultralytics
