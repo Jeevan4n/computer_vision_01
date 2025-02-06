@@ -1,4 +1,3 @@
-
 numpy
 opencv-python
 torch
@@ -7,3 +6,5 @@ matplotlib
 pandas
 scikit-learn
 pillow
+Flask
+gunicorn
