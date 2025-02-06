@@ -53,15 +53,15 @@ def upload_file(request):
                 uploaded_file.processed_file = output_path
                 uploaded_file.save()
 
-            return redirect("result", uploaded_file.id)
+            return redirect("result", file_id=uploaded_file.id)
     else:
         form = FileUploadForm()
-    return render(request, "upload.html", {"form": form})
+    return render(request, "pose_app/upload.html", {"form": form})
 
 def result(request, file_id):
     try:
         uploaded_file = UploadedFile.objects.get(id=file_id)
-        return render(request, "result.html", {"file": uploaded_file})
+        return render(request, "pose_app/result.html", {"file": uploaded_file})
     except UploadedFile.DoesNotExist:
         return HttpResponse("File not found.", status=404)
 
