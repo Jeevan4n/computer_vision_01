@@ -1,1 +1,15 @@
-myvenv
+myvenv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pot
+*.mo
+*.swp
+*.swo
+.DS_Store
+.env
+*.env

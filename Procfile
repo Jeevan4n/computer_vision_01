@@ -1,0 +1,1 @@
+web: gunicorn yolo_pose_project.wsgi:application
