@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'your-default-secret-key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['computer-vision-01.onrender.com']
+ALLOWED_HOSTS = ['computer-vision-01.onrender.com','127.0.0.1','127.0.0.1:8000']
 
 
 
