@@ -1,4 +1,4 @@
-<!-- filepath: /c:/Users/JEEVAN/OneDrive/Desktop/cnnn/yolo_pose_project/pose_app/templates/result.html -->
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -16,13 +16,11 @@
     <div class="result-container">
       <h1>Processing Complete</h1>
       <div class="result-details">
-        <p><strong>File ID:</strong> {{ file.id }}</p>
+        <p><strong>File ID:</strong> {{ video.id }}</p>
         <p><strong>Status:</strong> Successfully processed</p>
-        <p><strong>Output File:</strong> {{ file.processed_file }}</p>
+        <p><strong>Output File:</strong> {{ video.processed_video }}</p>
       </div>
-      <a href="{% url 'download_video' file.id %}" class="download-button"
-        >Download Video</a
-      >
+      <a href="{% url 'download_video' video.id %}" class="download-button">Download Video</a>
     </div>
   </body>
 </html>

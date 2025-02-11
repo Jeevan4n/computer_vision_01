@@ -1,9 +1,9 @@
 from django.db import models
 
-class UploadedFile(models.Model):
-    file = models.FileField(upload_to='uploads/')
-    processed_file = models.FileField(upload_to='processed/', null=True, blank=True)
+class UploadedVideo(models.Model):
+    video_file = models.FileField(upload_to='videos/')
+    processed_video = models.FileField(upload_to='processed_videos/', null=True, blank=True)
     uploaded_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.file.name
+        return self.video_file.name
